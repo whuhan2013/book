@@ -1,0 +1,398 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.3 数学3 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="地图开发">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2016-10-17-javascript-ic-web.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="2016-10-14-ios-coremotion-mapkit.html">
+            
+                <a href="2016-10-14-ios-coremotion-mapkit.html">
+            
+                    
+                    1.1 数学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2016-10-17-javascript-ic-web.html">
+            
+                <a href="2016-10-17-javascript-ic-web.html">
+            
+                    
+                    1.2 数学2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="2016-10-17-tilemile-and-server.html">
+            
+                <a href="2016-10-17-tilemile-and-server.html">
+            
+                    
+                    1.3 数学3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1.3 数学3</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;</strong>   </p>
+<ul>
+<li>TileMill&#x751F;&#x6210;Tile&#x5F71;&#x50CF;&#x91D1;&#x5B57;&#x5854;&#xFF08;.mbtiles&#x538B;&#x7F29;&#x6587;&#x4EF6;&#xFF09;</li>
+<li>Mbutil(<a href="https://github.com/mapbox/mbutil)&#x89E3;&#x538B;&#x7F29;" target="_blank">https://github.com/mapbox/mbutil)&#x89E3;&#x538B;&#x7F29;</a></li>
+<li>Apache HTTP Server(&#x6216;tomcat) &#x5EFA;&#x7ACB;web&#x74E6;&#x7247;&#x670D;&#x52A1;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8C03;&#x7528;&#xFF08; <a href="http://www.arcgis.com/home&#xFF09;&#x6D4B;&#x8BD5;" target="_blank">http://www.arcgis.com/home&#xFF09;&#x6D4B;&#x8BD5;</a></li>
+</ul>
+<p><strong>&#x9996;&#x5148;&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x5165;postgres&#x6570;&#x636E;&#x5E93;&#x4E2D;</strong>  </p>
+<pre><code>osm2pgsql -s -d simple -U postgres -H localhost -S default.style E:\SzgcSj2016\osmosis-latest\bin\Wuhan.pbf --prefix wuhan -W
+
+
+
+SELECT osm_id,edge_id, (dp).path[1] As
+index, ST_AsText((dp).geom) As wktnode from
+(
+select osm_id,row_number() over() as
+edge_id,ST_DumpPoints(way) as dp from
+wuhan_roads limit 100)x
+
+//&#x5C06;geometry&#x7684;&#x7A7A;&#x95F4;&#x53C2;&#x8003;&#x6539;&#x4E3A;4326&#xFF08;&#x56E0;&#x4E3A;&#x9ED8;&#x8BA4;&#x4E3A;900913&#xFF09;
+
+ALTER TABLE wuhan_roads ALTER
+COLUMN way TYPE
+geometry(LineString,4326) USING
+ST_Transform(way,4326);
+
+ALTER TABLE wuhan_line ALTER
+COLUMN way TYPE
+geometry(LineString,4326) USING
+ST_Transform(way,4326);
+
+ALTER TABLE wuhan_point ALTER
+COLUMN way TYPE geometry(Point,4326)
+USING ST_Transform(way,4326);
+
+//&#x7ED9;&#x8868;&#x683C;wuhan_polygon&#x6DFB;&#x52A0;&#x5C5E;&#x6027;way2 geometry
+
+ALTER TABLE wuhan_polygon ADD COLUMN way2
+
+geometry;
+
+
+
+//&#x7ED9;&#x8868;&#x683C;wuhan_polygon&#x7684;&#x5C5E;&#x6027;way2 geometry&#x6DFB;&#x52A0;&#x683C;&#x5F0F;&#xFF1A;(way,4326)
+
+update wuhan_polygon SET way2=ST_Transform(way,4326);
+
+
+
+//&#x5220;&#x9664;&#x8868;&#x683C;wuhan_polygon&#x7684;&#x5C5E;&#x6027;way
+
+ALTER TABLE wuhan_polygon DROP COLUMN way;
+
+
+
+//&#x7ED9;&#x8868;&#x683C;wuhan_polygon&#x7684;&#x5C5E;&#x6027;way2&#x6539;&#x6C11;&#x4E3A;way
+
+ALTER TABLE wuhan_polygon RENAME way2 TO way;
+</code></pre><p><strong>TileMill&#x914D;&#x7F6E;postgres&#x6570;&#x636E;&#x8FDE;&#x7ED3;</strong></p>
+<ul>
+<li>&#x65B0;&#x5EFA;&#x9879;&#x76EE;</li>
+<li>&#x6DFB;&#x52A0;&#x56FE;&#x5C42;</li>
+<li>&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x7684;&#x9ED8;&#x8BA4;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;</li>
+<li>&#x6837;&#x5F0F;&#x914D;&#x7F6E;</li>
+<li>&#x6761;&#x4EF6;&#x6027;&#x6837;&#x5F0F;</li>
+<li>&#x5DE5;&#x5177;&#x63D0;&#x793A;</li>
+<li>&#x56FE;&#x4F8B;</li>
+<li>&#x8F93;&#x51FA;&#x5730;&#x56FE;</li>
+</ul>
+<p>&#x8FDE;&#x63A5;&#x540E;&#x6839;&#x636E;ID&#x5199;&#x6837;&#x5F0F;&#x914D;&#x7F6E;  </p>
+<pre><code>#wuhanpolygon {
+  ::outline {
+    line-color: #3c22d6;
+    line-width: 2;
+    line-join: round;
+  }
+  polygon-fill: #03b6ad;
+}
+
+host=localhost port=5432 user=postgres password=root dbname=simple
+
+#wuhanroads {
+  ::outline {
+    line-color: #3c22d6;
+    line-width: 2;
+    line-join: round;
+  }
+  polygon-fill: #03b6ad;
+}
+
+
+#wuhanpoint {
+  marker-width:6;
+  marker-fill:#8b9091; //f45
+  marker-line-color:#813;
+  marker-allow-overlap:true;
+
+}
+</code></pre><p>&#x7136;&#x540E;&#x5BFC;&#x51FA;mbtils&#x6587;&#x4EF6;&#xFF0C;&#x7528;python&#x6216;&#x8005;QGis&#x5B89;&#x88C5;&#x63D2;&#x4EF6;&#x89E3;&#x538B;&#x5373;&#x53EF;&#xFF0C;&#x6240;&#x5F97;&#x5373;&#x74E6;&#x7247;&#x5730;&#x56FE;&#xFF0C;&#x628A;&#x6587;&#x4EF6;&#x5939;&#x653E;&#x5728;tomact&#x4E2D;root&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x5373;&#x53EF;&#x8BBF;&#x95EE;</p>
+<pre><code>&lt;table&gt;
+  &lt;td&gt;
+  &lt;tr &gt;&lt;img src=&quot;http://localhost:8080/wuhan/13/6698/4831&quot; &gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;img src=&quot;http://localhost:8080/wuhan/13/6699/4831&quot;&gt; &lt;/tr&gt;
+  &lt;/td&gt;
+  &lt;td&gt;
+  &lt;tr&gt;&lt;img src=&quot;http://localhost:8080/wuhan/13/6698/4832&quot; &gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;img src=&quot;http://localhost:8080/wuhan/13/6699/4832&quot;&gt; &lt;/tr&gt;
+  &lt;/td&gt;
+  &lt;/table&gt;
+`
+</code></pre><p>&#x5728;tomcat&#x4E2D;webapp&#x4E0B;&#x5BFC;&#x5165;geoserver,&#x542F;&#x52A8;geoserver,&#x8FDE;&#x63A5;postgres&#xFF0C;&#x5206;&#x522B;&#x53D1;&#x5E03;wuhan_roads,wuhan_point,wuhan_line,wuhan_polygen&#x7B49;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x67E5;&#x770B;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/whuhan2013/ImageRepertory/master/map/p2.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/whuhan2013/ImageRepertory/master/map/p3.jpg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2016-10-17-javascript-ic-web.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1.2 数学2">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"post","title":"1.3 数学3","date":"2016-10-17T00:00:00.000Z","categories":"blog","tags":["地图开发"],"description":"地图开发","level":"1.2.3","depth":2,"previous":{"title":"1.2 数学2","level":"1.2.2","depth":2,"path":"2016-10-17-javascript-ic-web.md","ref":"2016-10-17-javascript-ic-web.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2016-10-17-tilemile-and-server.md","mtime":"2016-10-17T04:52:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-26T13:03:54.429Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
